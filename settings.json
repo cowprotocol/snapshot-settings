@@ -1,0 +1,158 @@
+{
+  "name": "CoW DAO",
+  "about": "CoW DAO is stewarding the CoW Protocol Ecosystem. Start your proposal here: https://forum.cow.fi",
+  "terms": "https://gateway.pinata.cloud/ipfs/Qmf9MYhcG2pFrDoVy13p6FWeVF4nG9HbJvRfYYbhazTCFe",
+  "admins": [
+    "0x28eff6ece9d2f1e0b5e18d34b50e01a0c91d0c99",
+    "0xc3792470cee7e0d42c2be8e9552bd651766c5178",
+    "0x3eff9b80e4cf49ff6e5937bc696c81702251db7b",
+    "0x0385d80c2e1086277ecd11d75f87f1c63a279414",
+    "0xe435ebb3ad4c1259ed595c15d2191a021c61946b"
+  ],
+  "avatar": "ipfs://bafkreidzkilw2bovq45cbqvohf6c65taw6yl5ufvpn5kacho5rybzwp6p4",
+  "domain": "https://vote.cow.fi/",
+  "github": "cowprotocol",
+  "symbol": "vCOW",
+  "voting": {
+    "type": "basic",
+    "period": 604800,
+    "hideAbstain": false
+  },
+  "filters": {
+    "minScore": 0,
+    "onlyMembers": true
+  },
+  "members": [
+    "0x6b809ef125e708702d33111c4b7ee49460260df7",
+    "0xe42f9ff08d9d01db307c8fac196e94e3d3cf93e5",
+    "0xcfb35991d5f2afab39bb27388c42350ff43beeec"
+  ],
+  "network": "1",
+  "plugins": {
+    "poap": {},
+    "quorum": {
+      "total": 35000000,
+      "strategy": "static",
+      "basicCount": [
+        0
+      ]
+    },
+    "safeSnap": {
+      "safes": [
+        {
+          "network": "1",
+          "umaAddress": "0x85f520D59deBD4c2902BB7f79ACbc3Dd4b5AB699"
+        }
+      ]
+    }
+  },
+  "private": false,
+  "twitter": "CoWSwap",
+  "website": "https://cow.fi/",
+  "children": [
+    "cowgrants.eth"
+  ],
+  "coingecko": "cow-protocol",
+  "categories": [
+    "protocol"
+  ],
+  "moderators": [],
+  "strategies": [
+    {
+      "name": "erc20-balance-of",
+      "params": {
+        "symbol": "vCOW (mainnet)",
+        "address": "0xd057b63f5e69cf1b929b356b579cba08d7688048",
+        "decimals": 18
+      },
+      "network": "1"
+    },
+    {
+      "name": "erc20-balance-of",
+      "params": {
+        "symbol": "vCOW (GC)",
+        "address": "0xc20C9C13E853fc64d054b73fF21d3636B2d97eaB",
+        "decimals": 18
+      },
+      "network": "100"
+    },
+    {
+      "name": "erc20-balance-of-delegation",
+      "params": {
+        "symbol": "Delegated vCOW (Mainnet)",
+        "address": "0xd057b63f5e69cf1b929b356b579cba08d7688048",
+        "decimals": 18,
+        "delegationSpace": "cow.eth"
+      },
+      "network": "1"
+    },
+    {
+      "name": "erc20-balance-of-delegation",
+      "params": {
+        "symbol": "Delegated vCOW (GC)",
+        "address": "0xc20C9C13E853fc64d054b73fF21d3636B2d97eaB",
+        "decimals": 18,
+        "delegationSpace": "cow.eth"
+      },
+      "network": "100"
+    },
+    {
+      "name": "erc20-balance-of",
+      "params": {
+        "symbol": "COW (Mainnet)",
+        "address": "0xDEf1CA1fb7FBcDC777520aa7f396b4E015F497aB",
+        "decimals": 18
+      },
+      "network": "1"
+    },
+    {
+      "name": "erc20-balance-of",
+      "params": {
+        "symbol": "COW (GC)",
+        "address": "0x177127622c4A00F3d409B75571e12cB3c8973d3c",
+        "decimals": 18
+      },
+      "network": "100"
+    },
+    {
+      "name": "erc20-balance-of-delegation",
+      "params": {
+        "symbol": "Delegate COW (Mainnet)",
+        "address": "0xDEf1CA1fb7FBcDC777520aa7f396b4E015F497aB",
+        "decimals": 18,
+        "delegationSpace": "cow.eth"
+      },
+      "network": "1"
+    },
+    {
+      "name": "erc20-balance-of-delegation",
+      "params": {
+        "symbol": "Delegate COW (GC)",
+        "address": "0x177127622c4A00F3d409B75571e12cB3c8973d3c",
+        "decimals": 18,
+        "delegationSpace": "cow.eth"
+      },
+      "network": "100"
+    }
+  ],
+  "treasuries": [
+    {
+      "name": "CoW DAO main ",
+      "address": "0xcA771eda0c70aA7d053aB1B25004559B918FE662",
+      "network": "1"
+    },
+    {
+      "name": "CoW DAO USDC",
+      "address": "0xA1cb7762F40318ee0260F53e15De835fF001cb7E",
+      "network": "1"
+    }
+  ],
+  "validation": {
+    "name": "any",
+    "params": {}
+  },
+  "voteValidation": {
+    "name": "any",
+    "params": {}
+  }
+}
