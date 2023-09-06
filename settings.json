@@ -13,8 +13,8 @@
     "hideAbstain": false
   },
   "filters": {
-    "minScore": 0,
-    "onlyMembers": true
+    "minScore": 10000,
+    "onlyMembers": false
   },
   "members": [],
   "network": "1",
