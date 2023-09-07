@@ -38,7 +38,9 @@
   "categories": [
     "protocol"
   ],
-  "moderators": [],
+  "moderators": [
+    "0x387fe763ddac7a6b568ee344fefc31f626bc837b"
+  ],
   "strategies": [
     {
       "name": "erc20-balance-of",
