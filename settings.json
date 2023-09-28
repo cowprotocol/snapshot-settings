@@ -39,7 +39,9 @@
     "protocol"
   ],
   "moderators": [
-    "0x387fe763ddac7a6b568ee344fefc31f626bc837b"
+    "0x387fe763ddac7a6b568ee344fefc31f626bc837b",
+    "0xa312c2ae6a06504cbebe89468e6f9dc01c8b23d4",
+    "0xF44217A8b6b3f258BFFEaD635c226528aa516aea"
   ],
   "strategies": [
     {
