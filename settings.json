@@ -13,7 +13,7 @@
     "hideAbstain": false
   },
   "filters": {
-    "minScore": 10000,
+    "minScore": 0,
     "onlyMembers": false
   },
   "members": [],
@@ -144,8 +144,10 @@
     }    
   ],
   "validation": {
-    "name": "any",
-    "params": {}
+    "name": "basic",
+    "params": {
+      "minScore":10000
+    }
   },
   "voteValidation": {
     "name": "any",
