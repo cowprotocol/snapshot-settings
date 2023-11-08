@@ -141,12 +141,12 @@
       "name": "Treasury Safe Gnosis Chain",
       "address": "0x616dE58c011F8736fa20c7Ae5352F7f6FB9F0669",
       "network": "100"
-    }    
+    }
   ],
   "validation": {
     "name": "basic",
     "params": {
-      "minScore":10000
+      "minScore": 10000
     }
   },
   "voteValidation": {
