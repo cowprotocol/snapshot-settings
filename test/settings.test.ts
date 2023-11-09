@@ -1,7 +1,11 @@
+import snapshot from "@snapshot-labs/snapshot.js";
+
 import settings from "../src/settings.json";
 
 describe("settings.json", () => {
-  test("is a structured object", () => {
-    expect(typeof settings).toBe("object");
+  test("validates schema", () => {
+    expect(
+      snapshot.utils.validateSchema(snapshot.schemas.space, settings),
+    ).toBe(true);
   });
 });
