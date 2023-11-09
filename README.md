@@ -16,7 +16,7 @@ This repository stores and tests the snapshot settings for CoW DAO.
 The code in this repo provides tests to verify that the settings are well-formed.
 New changes are automatically tested with GitHub Actions.
 
-It requires [Yarn 1 (slassic)](https://classic.yarnpkg.com/en/docs/install) to be installed.
+It requires [Yarn 1 (classic)](https://classic.yarnpkg.com/en/docs/install) to be installed.
 
 ### Install dependencies
 
