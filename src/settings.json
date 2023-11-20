@@ -31,9 +31,7 @@
   "private": false,
   "twitter": "CoWSwap",
   "website": "https://cow.fi/",
-  "children": [
-    "cowgrants.eth"
-  ],
+  "children": [],
   "coingecko": "cow-protocol",
   "categories": [
     "protocol"
