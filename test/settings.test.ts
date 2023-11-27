@@ -13,5 +13,5 @@ describe("settings.json", () => {
   });
   test("Participation: require 35M COW/vCOW quorum", () => {
     expect(settings.voting.quorum == 35000000).toBe(true);
-  })
+  });
 });
