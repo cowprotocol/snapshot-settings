@@ -12,10 +12,11 @@ jobs:
     steps:
       - name: Pin
         id: pin
-        uses: jamescallumyoung/pinata-publish-action@v0.1.0
+        uses: aquiladev/ipfs-action@master
         with:
-          pinata-api-key: ${{ secrets.API_KEY }}
-          pinata-secret-api-key: ${{ secrets.API_SECRET }}
-          file-to-pin: ./src/settings.json
+          path: ./src/settings.json
+          service: pinata
+          pinataKey: ${{ secrets.API_KEY }}
+          pinataSecret: ${{ secrets.API_SECRET }}
       - name: Get the hash
-        run: echo "settings.json pinned to ipfs://${{ steps.pin.outputs.hash }}"
+        run: echo "settings.json pinned to ${{ steps.pin.outputs.ipfs }}"
