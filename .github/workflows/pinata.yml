@@ -1,0 +1,21 @@
+name: Pin to IPFS
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs: 
+  pin:
+    runs-on: ubuntu-latest
+    name: Pin with Pinata
+    steps:
+      - name: Pin
+        id: pin
+        uses: jamescallumyoung/pinata-publish-action@v0.1.0
+        with:
+          pinata-api-key: ${{ secrets.API_KEY }}
+          pinata-secret-api-key: ${{ secrets.API_SECRET }}
+          file-to-pin: ./src/settings.json
+      - name: Get the hash
+        run: echo "settings.json pinned to ipfs://${{ steps.pin.outputs.hash }}"
