@@ -9,9 +9,9 @@ describe("settings.json", () => {
     ).toBe(true);
   });
   test("Spam protection: require 10000 COW/vCOW", () => {
-    expect(settings.validation.params.minScore == 10000).toBe(true);
+    expect(settings.validation.params.minScore).toBe(10_000);
   });
   test("Participation: require 35M COW/vCOW quorum", () => {
-    expect(settings.voting.quorum == 35000000).toBe(true);
+    expect(settings.voting.quorum).toBe(35_000_000);
   });
 });
