@@ -10,6 +10,7 @@
   "voting": {
     "type": "basic",
     "period": 604800,
+    "quorum": 35000000,
     "hideAbstain": false
   },
   "filters": {
