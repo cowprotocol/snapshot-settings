@@ -18,6 +18,8 @@ New changes are automatically tested with GitHub Actions.
 
 It requires [Yarn 1 (classic)](https://classic.yarnpkg.com/en/docs/install) to be installed.
 
+Once any changes have been merged into `main`, the `settings.json` will be automatically uploaded and pinned to IPFS. The resultant CID can be used to inform the transaction for replacing the `snapshot` TXT record on the ENS domain.
+
 ### Install dependencies
 
 ```sh
