@@ -20,14 +20,7 @@
   "members": [],
   "network": "1",
   "plugins": {
-    "safeSnap": {
-      "safes": [
-        {
-          "network": "1",
-          "umaAddress": "0x85f520D59deBD4c2902BB7f79ACbc3Dd4b5AB699"
-        }
-      ]
-    }
+    "oSnap": {}
   },
   "private": false,
   "twitter": "CoWSwap",
