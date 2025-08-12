@@ -1,5 +1,4 @@
 import js from "@eslint/js";
-import importPlugin from "eslint-plugin-import";
 import prettier from "eslint-plugin-prettier/recommended";
 import globals from "globals";
 
@@ -14,15 +13,6 @@ export default [
         sourceType: "module",
         ecmaVersion: "latest",
       },
-    },
-    rules: {
-      "import/order": [
-        "error",
-        {
-          "newlines-between": "always",
-          alphabetize: { order: "asc" },
-        },
-      ],
     },
   },
 ];
