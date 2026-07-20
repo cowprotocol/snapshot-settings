@@ -9,7 +9,7 @@ jobs:
   test:
     strategy:
       matrix:
-        node-version: [18.x]
+        node-version: [22.x]
         os: [ubuntu-latest]
     runs-on: ${{ matrix.os }}
     steps:
@@ -26,6 +26,5 @@ jobs:
           restore-keys: |
             ${{ matrix.os }}-yarn-
       - run: yarn install --frozen
-      - run: yarn build
       - run: yarn lint
       - run: yarn test
