@@ -27,90 +27,63 @@
   "website": "https://cow.fi/",
   "children": [],
   "coingecko": "cow-protocol",
-  "categories": [
-    "protocol"
-  ],
+  "categories": ["protocol"],
   "moderators": [
     "0x387fe763ddac7a6b568ee344fefc31f626bc837b",
     "0xa312c2ae6a06504cbebe89468e6f9dc01c8b23d4",
     "0xF44217A8b6b3f258BFFEaD635c226528aa516aea"
   ],
+  "delegationPortal": {
+    "delegationType": "split-delegation",
+    "delegationContract": "0xDE1e8A7E184Babd9F0E3af18f40634e9Ed6F0905",
+    "delegationApi": "https://delegate-api.gnosisguild.org"
+  },
   "strategies": [
     {
-      "name": "erc20-balance-of",
+      "name": "split-delegation",
+      "network": "1",
       "params": {
-        "symbol": "vCOW (mainnet)",
-        "address": "0xd057b63f5e69cf1b929b356b579cba08d7688048",
-        "decimals": 18
-      },
-      "network": "1"
-    },
-    {
-      "name": "erc20-balance-of",
-      "params": {
-        "symbol": "vCOW (GC)",
-        "address": "0xc20C9C13E853fc64d054b73fF21d3636B2d97eaB",
-        "decimals": 18
-      },
-      "network": "100"
-    },
-    {
-      "name": "erc20-balance-of-delegation",
-      "params": {
-        "symbol": "Delegated vCOW (Mainnet)",
-        "address": "0xd057b63f5e69cf1b929b356b579cba08d7688048",
-        "decimals": 18,
-        "delegationSpace": "cow.eth"
-      },
-      "network": "1"
-    },
-    {
-      "name": "erc20-balance-of-delegation",
-      "params": {
-        "symbol": "Delegated vCOW (GC)",
-        "address": "0xc20C9C13E853fc64d054b73fF21d3636B2d97eaB",
-        "decimals": 18,
-        "delegationSpace": "cow.eth"
-      },
-      "network": "100"
-    },
-    {
-      "name": "erc20-balance-of",
-      "params": {
-        "symbol": "COW (Mainnet)",
-        "address": "0xDEf1CA1fb7FBcDC777520aa7f396b4E015F497aB",
-        "decimals": 18
-      },
-      "network": "1"
-    },
-    {
-      "name": "erc20-balance-of",
-      "params": {
-        "symbol": "COW (GC)",
-        "address": "0x177127622c4A00F3d409B75571e12cB3c8973d3c",
-        "decimals": 18
-      },
-      "network": "100"
-    },
-    {
-      "name": "erc20-balance-of-delegation",
-      "params": {
-        "symbol": "Delegate COW (Mainnet)",
-        "address": "0xDEf1CA1fb7FBcDC777520aa7f396b4E015F497aB",
-        "decimals": 18,
-        "delegationSpace": "cow.eth"
-      },
-      "network": "1"
-    },
-    {
-      "name": "erc20-balance-of-delegation",
-      "params": {
-        "symbol": "Delegate COW (GC)",
-        "address": "0x177127622c4A00F3d409B75571e12cB3c8973d3c",
-        "decimals": 18,
-        "delegationSpace": "cow.eth"
-      },
-      "network": "100"
+        "backendUrl": "https://delegate-api.gnosisguild.org",
+        "totalSupply": 1284949976,
+        "strategies": [
+          {
+            "name": "erc20-balance-of",
+            "params": {
+              "symbol": "vCOW (mainnet)",
+              "address": "0xd057b63f5e69cf1b929b356b579cba08d7688048",
+              "decimals": 18
+            },
+            "network": "1"
+          },
+          {
+            "name": "erc20-balance-of",
+            "params": {
+              "symbol": "vCOW (GC)",
+              "address": "0xc20C9C13E853fc64d054b73fF21d3636B2d97eaB",
+              "decimals": 18
+            },
+            "network": "100"
+          },
+          {
+            "name": "erc20-balance-of",
+            "params": {
+              "symbol": "COW (Mainnet)",
+              "address": "0xDEf1CA1fb7FBcDC777520aa7f396b4E015F497aB",
+              "decimals": 18
+            },
+            "network": "1"
+          },
+          {
+            "name": "erc20-balance-of",
+            "params": {
+              "symbol": "COW (GC)",
+              "address": "0x177127622c4A00F3d409B75571e12cB3c8973d3c",
+              "decimals": 18
+            },
+            "network": "100"
+          }
+        ]
+      }
     }
   ],
   "treasuries": [
